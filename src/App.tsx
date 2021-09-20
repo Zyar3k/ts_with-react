@@ -1,5 +1,6 @@
 import "./App.css";
 import Button from "./components/Button";
+import Container from "./components/Container";
 import Input from "./components/Input";
 // import Heading from "./components/Heading";
 // import Oscar from "./components/Oscar";
@@ -21,6 +22,7 @@ function App() {
   // ];
   return (
     <div className='App'>
+      <Container styles={{ border: "1px solid red", padding: "1rem" }} />
       <Button
         handleClick={(event, id) => {
           console.log("button click", event, id);
