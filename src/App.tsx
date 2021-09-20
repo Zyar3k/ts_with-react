@@ -1,10 +1,12 @@
 import "./App.css";
-import Heading from "./components/Heading";
-import Oscar from "./components/Oscar";
-import Greet from "./components/Greet";
+import Button from "./components/Button";
+import Input from "./components/Input";
+// import Heading from "./components/Heading";
+// import Oscar from "./components/Oscar";
+// import Greet from "./components/Greet";
 // import Person from "./components/Person";
 // import PersonList from "./components/PersonList";
-import Status from "./components/Status";
+// import Status from "./components/Status";
 
 function App() {
   // const personName = {
@@ -19,12 +21,18 @@ function App() {
   // ];
   return (
     <div className='App'>
-      <Heading>Lorem, ipsum dolor.</Heading>
+      <Button
+        handleClick={(event, id) => {
+          console.log("button click", event, id);
+        }}
+      />
+      <Input value='' handleChange={(event) => console.log(event)} />
+      {/* <Heading>Lorem, ipsum dolor.</Heading>
       <Status status='loading' />
       <Oscar>
         <Heading>Oscar goes to Mario Puzzo</Heading>
       </Oscar>
-      <Greet name='Alex' isLoggedIn={true} />
+      <Greet name='Alex' isLoggedIn={true} /> */}
       {/* <Person name={personName} />
       <PersonList names={nameList} /> */}
     </div>
