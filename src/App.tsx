@@ -1,5 +1,7 @@
 import "./App.css";
-import Counter from "./components/state/Counter";
+import Box from "./components/context/Box";
+import ThemeContextProvider from "./components/context/ThemeContext";
+// import Counter from "./components/state/Counter";
 // import Button from "./components/Button";
 // import Container from "./components/Container";
 // import Input from "./components/Input";
@@ -8,8 +10,8 @@ import Counter from "./components/state/Counter";
 // import Greet from "./components/Greet";
 // import Person from "./components/Person";
 // import PersonList from "./components/PersonList";
-import LoggedIn from "./components/state/LoggedIn";
-import User from "./components/state/User";
+// import LoggedIn from "./components/state/LoggedIn";
+// import User from "./components/state/User";
 // import Status from "./components/Status";
 
 function App() {
@@ -26,8 +28,12 @@ function App() {
 
   return (
     <div className='App'>
-      <User />
-      <Counter />
+      <Box />
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
+      {/* <User /> */}
+      {/* <Counter /> */}
       {/* <LoggedIn /> */}
       {/* <Container styles={{ border: "1px solid red", padding: "1rem" }} /> */}
       {/* <Button
