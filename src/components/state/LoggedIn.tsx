@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 const LoggedIn = () => {
-  const [isLoggedIn, setisLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   const handleLogin = () => {
-    setisLoggedIn(true);
+    setIsLoggedIn(true);
   };
   const handleLogout = () => {
-    setisLoggedIn(false);
+    setIsLoggedIn(false);
   };
   return (
     <div>
