@@ -1,6 +1,8 @@
 import "./App.css";
-import Box from "./components/context/Box";
-import ThemeContextProvider from "./components/context/ThemeContext";
+// import Box from "./components/context/Box";
+// import ThemeContextProvider from "./components/context/ThemeContext";
+import UserContextProvider from "./components/context/UserContext";
+import User from "./components/context/User";
 // import Counter from "./components/state/Counter";
 // import Button from "./components/Button";
 // import Container from "./components/Container";
@@ -28,10 +30,13 @@ function App() {
 
   return (
     <div className='App'>
-      <Box />
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
+      {/* <Box />
       <ThemeContextProvider>
         <Box />
-      </ThemeContextProvider>
+      </ThemeContextProvider> */}
       {/* <User /> */}
       {/* <Counter /> */}
       {/* <LoggedIn /> */}
