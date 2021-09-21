@@ -7,6 +7,7 @@ import Input from "./components/Input";
 // import Greet from "./components/Greet";
 import Person from "./components/Person";
 import PersonList from "./components/PersonList";
+import LoggedIn from "./components/state/LoggedIn";
 // import Status from "./components/Status";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
   ];
   return (
     <div className='App'>
+      <LoggedIn />
       <Container styles={{ border: "1px solid red", padding: "1rem" }} />
       <Button
         handleClick={(event, id) => {
