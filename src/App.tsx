@@ -1,5 +1,6 @@
 import "./App.css";
-import List from "./components/generics/List";
+import RandomNumber from "./components/restriction/RandomNumber";
+// import List from "./components/generics/List";
 // import DomRef from "./components/ref/DomRef";
 // import MutableRef from "./components/ref/MutableRef";
 // import Counter from "./components/class/Counter";
@@ -36,19 +37,20 @@ function App() {
 
   return (
     <div className='App'>
+      <RandomNumber value={10} isPositive />
       {/* <List
         items={["Tom", "John", "Bron"]}
         onClick={(item) => console.log(item)}
       />
       <List items={[1, 11, 111]} onClick={(item) => console.log(item)} /> */}
-      <List
+      {/* <List
         items={[
           { id: 2, first: "John", last: "Wayne" },
           { id: 23, first: "Bruce", last: "Wayne" },
           { id: 24, first: "Tom", last: "Bom" }
         ]}
         onClick={(item) => console.log(item)}
-      />
+      /> */}
       {/* <Private isLoggedIn={true} Component={Profile} /> */}
       {/* <Counter message='The count value is' /> */}
       {/* <DomRef />
