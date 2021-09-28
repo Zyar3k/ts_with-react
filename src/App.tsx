@@ -1,5 +1,6 @@
 import "./App.css";
-import RandomNumber from "./components/restriction/RandomNumber";
+// import RandomNumber from "./components/restriction/RandomNumber";
+import Toast from "./components/templateliterals/Toast";
 // import List from "./components/generics/List";
 // import DomRef from "./components/ref/DomRef";
 // import MutableRef from "./components/ref/MutableRef";
@@ -37,7 +38,8 @@ function App() {
 
   return (
     <div className='App'>
-      <RandomNumber value={10} isPositive />
+      <Toast position='center-top' />
+      {/* <RandomNumber value={10} isPositive /> */}
       {/* <List
         items={["Tom", "John", "Bron"]}
         onClick={(item) => console.log(item)}
