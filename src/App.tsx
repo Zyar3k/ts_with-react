@@ -1,5 +1,6 @@
 import "./App.css";
 import CustomButton from "./components/html/Button";
+import Text from "./components/polymorphic/Text";
 // import RandomNumber from "./components/restriction/RandomNumber";
 // import Toast from "./components/templateliterals/Toast";
 // import List from "./components/generics/List";
@@ -39,7 +40,16 @@ function App() {
 
   return (
     <div className='App'>
-      <CustomButton variant='primary'>Primary Button</CustomButton>
+      <Text as='h1' size='lg'>
+        Heading
+      </Text>
+      <Text as='p' size='md'>
+        Paragraph
+      </Text>
+      <Text as='label' htmlFor='exampleId' size='sm' color='secondary'>
+        Label
+      </Text>
+      {/* <CustomButton variant='primary'>Primary Button</CustomButton> */}
       {/* <Toast position='center-top' /> */}
       {/* <RandomNumber value={10} isPositive /> */}
       {/* <List
